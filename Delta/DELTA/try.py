@@ -1,9 +1,9 @@
 import pandas as pd
 from tensorflow import keras
 from tensorflow.keras import layers #type: ignore
-from tensorflow.keras.models import Sequential 
-from tensorflow.keras.layers import Dense
-from tensorflow.keras.layers import Input
+from tensorflow.keras.models import Sequential #type: ignore
+from tensorflow.keras.layers import Dense #type: ignore
+from tensorflow.keras.layers import Input #type: ignore
 from sklearn.model_selection import train_test_split
 import keras
 from keras import layers
@@ -15,8 +15,8 @@ from sklearn.metrics import mean_squared_error
 
 
 
-train_df = pd.read_csv(r'C:\Users\User\Desktop\BIS\2 Semester\DELTA\Deep_Learning_for_text_analysis\Train_Time_Series.csv')
-test_df = pd.read_csv(r'C:\Users\User\Desktop\BIS\2 Semester\DELTA\Deep_Learning_for_text_analysis\Test_Time_Series.csv')
+train_df = pd.read_csv(r'C:\Users\User\Desktop\UNI\Delta\DELTA\Train_Time_Series.csv')
+test_df = pd.read_csv(r'C:\Users\User\Desktop\UNI\Delta\DELTA\Test_Time_Series.csv')
 train_df = train_df.set_index('Date')
 test_df=test_df.set_index('Date')
 plt.figure(figsize=(10, 6))
